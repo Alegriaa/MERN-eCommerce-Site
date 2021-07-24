@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { MdAddShoppingCart } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
@@ -10,7 +11,9 @@ const Header = () => {
     <header>
       <Navbar bg="light" expand="lg" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/">Desenme</Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand>Desenme</Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"
@@ -30,18 +33,18 @@ const Header = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/cart">
-                {" "}
-                <MdAddShoppingCart />
-              </Nav.Link>
+              <LinkContainer to="/cart">
+                <Nav.Link>
+                  {" "}
+                  <MdAddShoppingCart />
+                </Nav.Link>
+              </LinkContainer>
               {/* <div className="py-1 pl-1">
                 <IoPersonSharp/>
                  </div> */}
-
-              <Nav.Link href="/login" className="px-1">
-                {" "}
-                Sign In
-              </Nav.Link>
+              <LinkContainer to="/login">
+                <Nav.Link className="px-1"> Sign In</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
