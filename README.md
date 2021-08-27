@@ -1,5 +1,6 @@
-<h1 align="center">MERN eCommerce MERN eCommerce</h1>
-<h3 align="center">Full Stack Web Application (Mern</h3>
+<h1 align="center">MERN eCommerce </h1>
+<h3 align="left">Full Stack Web Application</h3>
+<p align="left"> Implemented a complete eCommerce / shopping cart application with various functionality</p>
 
 
 <h3 align="left">Languages and Tools:</h3>
