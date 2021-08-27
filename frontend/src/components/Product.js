@@ -33,5 +33,4 @@ const Product = ({ product }) => {
     </Card>
   );
 };
-
 export default Product;
