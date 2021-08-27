@@ -1,4 +1,5 @@
-<h3 align="center">Full Stack Web Application</h3>
+<h1 align="center">MERN eCommerce MERN eCommerce</h1>
+<h3 align="center">Full Stack Web Application (Mern</h3>
 
 
 <h3 align="left">Languages and Tools:</h3>
