@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // needed if dealing with a redux state in a component
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
-import { addToCart } from "../actions/cartActions";
+import { addToCart, removeFromCart } from "../actions/cartActions";
 import {
   Row,
   Col,
@@ -34,7 +34,7 @@ const CartScreen = ({ match, location, history }) => {
   }, [dispatch, productId, quantity]);
 
   const removeFromCartHandler = (id) => {
-    console.log("remove");
+    dispatch(removeFromCart(id));
   };
 
   const checkOutHandler = () => {
